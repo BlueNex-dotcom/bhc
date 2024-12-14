@@ -23,26 +23,31 @@
             margin: 0 auto;
             padding: 0 15px;
         }
-        header, footer {
+        header {
             background-color: #222222;
             padding: 8px 0;
             color: white;
+            position: relative; /* Allows absolute positioning inside the header */
         }
         header img {
             max-width: 250px;
+            position: absolute; /* Allow logo to be positioned independently */
+            top: 50%; /* Vertically center logo */
+            left: 10px; /* Place logo 10px from the left edge (adjust as needed) */
+            transform: translateY(-50%); /* Fine-tunes vertical centering */
         }
-        
-       .container {
-    display: flex;
-    justify-content: space-between; /* Ensures logo and nav are on opposite sides */
-    align-items: center; /* Centers items vertically */
-}
 
-nav ul {
-    margin-left: auto; /* Moves navigation to the right */
-    display: flex;
-    gap: 15px;
-}
+        .container {
+            display: flex;
+            justify-content: space-between; /* Ensures logo and nav are on opposite sides */
+            align-items: center; /* Centers items vertically */
+        }
+
+        nav ul {
+            margin-left: auto; /* Moves navigation to the right */
+            display: flex;
+            gap: 15px;
+        }
 
         nav ul li {
             display: inline;
@@ -159,6 +164,7 @@ nav ul {
     </footer>
 </body>
 </html>
+
 
 
 
