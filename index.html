@@ -22,6 +22,9 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
+            display: flex;
+            justify-content: space-between; /* Ensures logo and nav are on opposite sides */
+            align-items: center; /* Centers items vertically */
         }
         header {
             background-color: #222222;
@@ -37,26 +40,24 @@
             transform: translateY(-50%); /* Fine-tunes vertical centering */
         }
 
-        .container {
-            display: flex;
-            justify-content: space-between; /* Ensures logo and nav are on opposite sides */
-            align-items: center; /* Centers items vertically */
+        nav {
+            margin-left: auto; /* Ensures the nav moves to the right side */
         }
 
         nav ul {
-            margin-left: auto; /* Moves navigation to the right */
             display: flex;
-            gap: 15px;
+            gap: 15px; /* Space between links */
         }
 
         nav ul li {
-            display: inline;
+            list-style: none;
         }
         nav ul li a {
             text-decoration: none;
             color: white;
             font-weight: 600;
         }
+
         #hero {
             background: url('https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/hero-background.jpg') no-repeat center center/cover;
             padding: 100px 0;
@@ -164,3 +165,4 @@
     </footer>
 </body>
 </html>
+
