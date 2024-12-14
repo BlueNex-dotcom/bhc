@@ -12,7 +12,7 @@
 
     <style>
         /* Inline essential styles */
-       body {
+body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -30,15 +30,16 @@
 
 header {
     background-color: #222222;
-    padding: 15px 0;
+    padding: 0 15px; /* Remove extra vertical padding */
     color: white;
-    position: relative; /* Keeps positioning of elements inside the header */
+    height: 80px; /* Set a fixed height for the header */
+    display: flex;
+    align-items: center; /* Vertically center the items inside the header */
 }
 
 header img {
-    max-width: 300px;
+    max-width: 250px; /* Keep the logo size smaller */
     height: auto;
-    /* Remove position: absolute; and let flexbox handle the alignment */
 }
 
 nav ul {
