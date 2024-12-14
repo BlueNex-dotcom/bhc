@@ -99,6 +99,20 @@
             padding: 10px 20px;
             cursor: pointer;
         }
+
+/* Hover effect: underline the link with #dab327 */
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-color: #dab327; /* Ensures underline matches the color */
+}
+
+/* Active link effect: make the text color #dab327 */
+nav ul li a.active {
+    color: #dab327;
+    text-decoration: none; /* Remove underline for the active link */
+}
+
+        
     </style>
 </head>
 <body>
@@ -107,7 +121,7 @@
             <img src="https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/bhc-logo.png" alt="House Clearance Logo" />
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">Home</a></li>
                     <li><a href="#services">Our Services</a></li>
                     <li><a href="#about">About Us</a></li>
                     <li><a href="#contact">Contact</a></li>
