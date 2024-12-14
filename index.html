@@ -12,50 +12,58 @@
 
     <style>
         /* Inline essential styles */
-       body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-}
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            background-color: #222222;
+            padding: 15px 0;
+            color: white;
+            position: relative; /* Allows absolute positioning inside the header */
+        }
+        header img {
+            max-width: 300px;
+            position: absolute; /* Allow logo to be positioned independently */
+            top: 50%; /* Vertically center logo */
+            left: 10px; /* Place logo 10px from the left edge (adjust as needed) */
+            transform: translateY(-50%); /* Fine-tunes vertical centering */
+        }
 
-header {
-    background-color: #222222;
-    padding: 15px 0; /* Keep the header height consistent */
-    color: white;
-    display: flex; /* Enable flexbox for header */
-    justify-content: space-between; /* Spread the logo and nav across the header */
-    align-items: center; /* Vertically center the items */
-}
+        .container {
+            display: flex;
+            justify-content: space-between; /* Ensures logo and nav are on opposite sides */
+            align-items: center; /* Centers items vertically */
+        }
 
-header img {
-    max-width: 300px; /* Set max size for the logo */
-    height: auto; /* Keep the aspect ratio intact */
-}
+        nav ul {
+            margin-left: auto; /* Moves navigation to the right */
+            display: flex;
+            gap: 15px;
+        }
 
-nav ul {
-    display: flex; /* Arrange nav items in a row */
-    gap: 15px; /* Add space between the links */
-    margin: 0; /* Remove any default margin */
-    list-style: none; /* Remove bullet points */
-}
-
-nav ul li {
-    display: inline; /* Ensure each list item is inline */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+        #hero {
+            background: url('https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/hero-background.jpg') no-repeat center center/cover;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
         #hero h1, #hero p {
             color: white;
             z-index: 1;
