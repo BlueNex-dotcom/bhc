@@ -31,12 +31,19 @@
         header img {
             max-width: 200px;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-        }
+        
+       .container {
+    display: flex;
+    justify-content: space-between; /* Ensures logo and nav are on opposite sides */
+    align-items: center; /* Centers items vertically */
+}
+
+nav ul {
+    margin-left: auto; /* Moves navigation to the right */
+    display: flex;
+    gap: 15px;
+}
+
         nav ul li {
             display: inline;
         }
