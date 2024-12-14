@@ -24,8 +24,9 @@
             padding: 0 15px;
         }
         header, footer {
-            background-color: #f4f4f4;
+            background-color: #dab327;
             padding: 20px 0;
+            color: white;
         }
         header img {
             max-width: 150px;
@@ -41,8 +42,31 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #333;
+            color: white;
             font-weight: 600;
+        }
+        #hero {
+            background: url('images/hero.jpg') no-repeat center center/cover;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+        #hero a {
+            background-color: #dab327;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        #services ul li {
+            color: #dab327;
+        }
+        button, input[type="submit"] {
+            background-color: #dab327;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -62,11 +86,11 @@
     </header>
 
     <main>
-        <section id="hero" style="background: url('images/hero.jpg') no-repeat center center/cover; padding: 100px 0; text-align: center; color: white;">
+        <section id="hero">
             <div class="container">
                 <h1>Professional House Clearance Services</h1>
                 <p>Your trusted partner for efficient and hassle-free clearances.</p>
-                <a href="#contact" style="background-color: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Get In Touch</a>
+                <a href="#contact">Get In Touch</a>
             </div>
         </section>
 
@@ -110,3 +134,4 @@
     </footer>
 </body>
 </html>
+
