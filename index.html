@@ -19,34 +19,26 @@ body {
     line-height: 1.5;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between; /* This will push the logo to the left and nav to the right */
-    align-items: center; /* Vertically centers the logo and nav */
-}
-
 header {
     background-color: #222222;
     padding: 0 15px;
     color: white;
-    height: 80px; /* Set a fixed height for the header */
-    display: flex;
+    height: 80px; /* Fixed height for the header */
+    display: flex; /* Use flexbox on header */
+    justify-content: space-between; /* Place logo on the left and nav on the right */
     align-items: center; /* Vertically center logo and navigation */
 }
 
 header img {
-    max-width: 250px; /* Keep the logo size smaller */
+    max-width: 250px; /* Logo size */
     height: auto;
 }
 
 nav ul {
-    margin-left: auto; /* Pushes the navigation links to the right */
-    display: flex;
-    gap: 15px; /* Adds space between links */
-    list-style: none; /* Removes bullet points from the list */
+    display: flex; /* Display navigation items in a row */
+    gap: 15px; /* Adds space between navigation links */
+    list-style: none; /* Removes bullet points */
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
@@ -58,6 +50,13 @@ nav ul li a {
     color: white;
     font-weight: 600;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 
 
         #hero {
