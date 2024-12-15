@@ -1,3 +1,18 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>House Clearance Services | Reliable & Affordable | Contact Us Today</title>
+    <meta name="description" content="We offer professional and reliable house clearance services tailored to your needs. Contact us to schedule your clearance today." />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" media="all" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600&display=swap" media="all" />
+
+    <style>
+        /* Inline essential styles */
+     /* Body with full background color */
 /* Body with full background color */
 body {
     background-color: #222222; /* Matches the header and footer */
@@ -66,3 +81,124 @@ nav ul li a:hover::after, nav ul li a.active::after {
 nav ul li a.active {
     color: #dab327; /* Highlight active link */
 }
+
+
+        #hero {
+            background: url('https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/hero-background.jpg') no-repeat center center/cover;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        #hero h1, #hero p {
+            color: white;
+            z-index: 1;
+            position: relative;
+        }
+        #hero a {
+            background-color: #dab327;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+        }
+        #hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+        #services ul li {
+            color: #dab327;
+        }
+        button, input[type="submit"] {
+            background-color: #dab327;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/bhc-logo.png" alt="House Clearance Logo" />
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+     <!-- Content Wrapper -->
+    <div id="content-wrapper">
+        <main>
+            <section id="hero">
+                <div class="container">
+                    <h1>Professional House Clearance Services</h1>
+                    <p>Your trusted partner for efficient and hassle-free clearances.</p>
+                    <a href="#contact">GET IN TOUCH</a>
+                </div>
+            </section>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Professional House Clearance Services</h1>
+                <p>Your trusted partner for efficient and hassle-free clearances.</p>
+                <a href="#contact">GET IN TOUCH</a>
+            </div>
+        </section>
+
+        <section id="services" class="container">
+            <h2>Our Services</h2>
+            <p>We provide comprehensive house clearance solutions, including:</p>
+            <ul>
+                <li>Full house clearances</li>
+                <li>Garage and loft clearance</li>
+                <li>Garden waste removal</li>
+                <li>Commercial property clearances</li>
+            </ul>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Us</h2>
+            <p>With over 10 years of experience, we ensure top-notch services with a focus on customer satisfaction and environmental responsibility. Contact us for personalized solutions tailored to your needs.</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 House Clearance Services. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
