@@ -60,15 +60,18 @@ header, footer {
         }
 
         nav {
-            margin-left: auto; /* Ensures the nav moves to the right side */
-        }
+    margin-left: auto; /* Pushes the nav to the right side */
+}
 
-        nav ul {
-            display: flex;
-            margin-left: auto; /* Push the navigation links to the right */
-            padding: 0; /* Remove any extra padding */
-            gap: 15px; /* Space between links */
-        }
+nav ul {
+    display: flex; /* Makes the list horizontal */
+    justify-content: flex-end; /* Aligns links to the right */
+    padding: 0; /* Removes extra padding */
+    gap: 15px; /* Space between the links */
+    list-style: none; /* Removes bullets */
+    margin: 0; /* Ensures no extra margins */
+}
+
 
         nav ul li {
          list-style: none;
