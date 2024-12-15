@@ -13,7 +13,6 @@
     <style>
         /* Inline essential styles */
      /* Body with full background color */
-/* Body with full background color */
 body {
     background-color: #222222; /* Matches the header and footer */
     margin: 0;
@@ -24,12 +23,11 @@ body {
 /* Content Wrapper */
 #content-wrapper {
     background-color: white; /* Background for content */
-    max-width: 95%; /* Keeps content closer to the screen edge */
-    margin: 20px auto; /* Adds a gap between the content and edges */
-    padding: 20px; /* Inner spacing for content */
-    border-radius: 10px; /* Rounded corners for content area */
-    box-shadow: none; /* Removes any shadow effect */
-    border: none; /* Ensures no border appears */
+    max-width: 95%; /* Slightly closer to the screen edges */
+    margin: 20px auto; /* Adds space around the content */
+    padding: 20px; /* Inner padding for spacing */
+    border-radius: 10px; /* Rounded corners for the content area */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
 }
 
 /* Header and Footer adjustments for alignment */
@@ -40,48 +38,71 @@ header, footer {
 
 /* Container inside header or sections */
 .container {
-    max-width: 1100px; /* Restricts inner content width */
+    max-width: 1100px; /* Restricts inner content width for alignment */
     margin: 0 auto;
     padding: 0 15px; /* Inner padding for proper spacing */
-    display: flex; /* Ensures navigation alignment */
-    justify-content: space-between; /* Separates logo (left) and links (right) */
-    align-items: center; /* Vertically aligns header content */
 }
 
-/* Navigation Links */
-nav ul {
-    display: flex;
-    list-style: none; /* Removes bullet points */
-    margin: 0; /* Removes extra margin */
-    padding: 0; /* Removes extra padding */
-}
+            
+            header {
+            background-color: #222222;
+            padding: 15px 0;
+            color: white;
+            position: relative; /* Allows absolute positioning inside the header */
+        }
+        
+        header img {
+            max-width: 275px;
+            position: absolute; /* Allow logo to be positioned independently */
+            top: 50%; /* Vertically center logo */
+            left: 25px; /* Place logo 10px from the left edge (adjust as needed) */
+            transform: translateY(-50%); /* Fine-tunes vertical centering */
+        }
 
-nav ul li {
-    margin-left: 20px; /* Adds spacing between navigation items */
-}
+        nav {
+            margin-left: auto; /* Ensures the nav moves to the right side */
+        }
 
-nav ul li a {
+        nav ul {
+            display: flex;
+            gap: 15px; /* Space between links */
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+  nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 600;
-    position: relative;
+    position: relative; /* Needed to position the ::after pseudo-element */
 }
 
-/* Hover underline and active link styles */
-nav ul li a:hover::after, nav ul li a.active::after {
+nav ul li a::after {
     content: "";
-    position: absolute;
-    width: 120%; /* Makes underline slightly wider than text */
+    display: block;
+    width: 120%; /* Slightly longer than the word */
     height: 2px; /* Thickness of the underline */
-    background-color: #dab327;
-    bottom: -6px; /* Position further from text */
-    left: -10%; /* Ensures the underline extends equally on both sides */
+    background-color: #dab327; /* Underline color */
+    position: absolute;
+    bottom: -6px; /* Distance from the text */
+    left: -10%; /* Centers the underline relative to the text */
+    transform: scaleX(0); /* Hides the underline initially */
+    transition: transform 0.3s ease; /* Smooth transition for reveal */
+    transform-origin: left; /* Animation starts from the left */
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1); /* Reveals the underline on hover */
+}
+
+nav ul li a.active::after {
+    transform: scaleX(1); /* Keeps the underline visible for the active link */
 }
 
 nav ul li a.active {
-    color: #dab327; /* Highlight active link */
+    color: #dab327; /* Changes text color for the active link */
 }
-
 
         #hero {
             background: url('https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/hero-background.jpg') no-repeat center center/cover;
