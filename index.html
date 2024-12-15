@@ -12,36 +12,37 @@
 
     <style>
         /* Inline essential styles */
-        body {
-    background-color: #222222; /* Same as header and footer */
+     /* Body with full background color */
+body {
+    background-color: #222222; /* Matches the header and footer */
     margin: 0;
     padding: 0;
-    font-size: 100%; /* Reset font size to default for scaling */
-    box-sizing: border-box; /* Ensure consistent box sizing */
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Content Wrapper */
 #content-wrapper {
-    background-color: white; /* Inner content background */
-    max-width: 90%; /* Reduced width for proper scaling */
-    margin: 20px auto; /* Slightly increase margin for spacing */
-    padding: 20px; /* Padding for inner content spacing */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border: 10px solid #222222; /* Matches the background color */
-    border-radius: 8px; /* Rounded corners */
+    background-color: white; /* Background for content */
+    max-width: 95%; /* Slightly closer to the screen edges */
+    margin: 20px auto; /* Adds space around the content */
+    padding: 20px; /* Inner padding for spacing */
+    border-radius: 10px; /* Rounded corners for the content area */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional subtle shadow for depth */
 }
 
-/* Ensure Header, Footer, and Other Content Stay Proportional */
+/* Header and Footer adjustments for alignment */
 header, footer {
     width: 100%;
     box-sizing: border-box;
 }
 
+/* Container inside header or sections */
 .container {
-    max-width: 1100px; /* Restrict inner content for better proportions */
+    max-width: 1100px; /* Restricts inner content width for alignment */
     margin: 0 auto;
-    padding: 0 15px; /* Ensure spacing inside the container */
+    padding: 0 15px; /* Inner padding for proper spacing */
 }
+
             
             header {
             background-color: #222222;
