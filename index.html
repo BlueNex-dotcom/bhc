@@ -13,31 +13,35 @@
     <style>
         /* Inline essential styles */
         body {
-            background-color: #222222;
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-            display: flex;
-            justify-content: space-between; /* Ensures logo and nav are on opposite sides */
-            align-items: center; /* Centers items vertically */
-            
- /* Create a wrapper for all inner content */
-#content-wrapper {
-    background-color: white; /* Inner content background */
-    max-width: 1100px; /* Adjust the width as needed */
-    margin: 20px auto; /* Creates space around the content */
-    padding: 20px; /* Adds inner padding for the content */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
-    border: 10px solid #222222; /* Matches the background color */
-    border-radius: 8px; /* Optional: rounded corners */
+    background-color: #222222; /* Same as header and footer */
+    margin: 0;
+    padding: 0;
+    font-size: 100%; /* Reset font size to default for scaling */
+    box-sizing: border-box; /* Ensure consistent box sizing */
 }
 
+/* Content Wrapper */
+#content-wrapper {
+    background-color: white; /* Inner content background */
+    max-width: 90%; /* Reduced width for proper scaling */
+    margin: 20px auto; /* Slightly increase margin for spacing */
+    padding: 20px; /* Padding for inner content spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 10px solid #222222; /* Matches the background color */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Ensure Header, Footer, and Other Content Stay Proportional */
+header, footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px; /* Restrict inner content for better proportions */
+    margin: 0 auto;
+    padding: 0 15px; /* Ensure spacing inside the container */
+}
             
             header {
             background-color: #222222;
