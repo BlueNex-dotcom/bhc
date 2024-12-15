@@ -59,19 +59,26 @@ header, footer {
             transform: translateY(-50%); /* Fine-tunes vertical centering */
         }
 
-        nav {
-    margin-left: auto; /* Pushes the nav to the right side */
+      nav {
+    margin-left: auto; /* Push the navigation to the right */
 }
 
 nav ul {
     display: flex; /* Makes the list horizontal */
-    justify-content: flex-end; /* Aligns links to the right */
-    padding: 0; /* Removes extra padding */
-    gap: 15px; /* Space between the links */
+    justify-content: flex-end; /* Aligns the links to the right */
+    padding: 0; /* Removes padding around the list */
+    margin: 0; /* Removes any extra margin */
+    gap: 15px; /* Space between links */
     list-style: none; /* Removes bullets */
-    margin: 0; /* Ensures no extra margins */
 }
 
+header .container {
+    display: flex; /* Enables flexbox for aligning items */
+    justify-content: space-between; /* Ensures the logo and nav are on opposite sides */
+    align-items: center; /* Vertically centers the logo and nav */
+    padding: 0; /* Removes padding around the container */
+    margin: 0; /* Removes any extra margin */
+}
 
         nav ul li {
          list-style: none;
