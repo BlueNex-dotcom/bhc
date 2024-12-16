@@ -138,7 +138,7 @@ nav ul li a.active {
     text-align: left; /* Ensures text aligns to the left */
     color: white;
     position: relative;
-    height: 500px; /* You can adjust this height to suit the image size */
+    height: 600px; /* You can adjust this height to suit the image size */
 }
 
 #hero .container {
@@ -152,6 +152,9 @@ nav ul li a.active {
 
 .hero-left {
     max-width: 60%; /* Takes up most of the space */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with slight transparency */
+    padding: 20px; /* Adds space between the background and the text */
+    border-radius: 10px; /* Rounds the corners of the background */
 }
 
 .hero-left h1 {
@@ -185,18 +188,6 @@ nav ul li a.active {
 .hero-right a:hover {
     background-color: #c9a71c; /* Darken the button when hovered */
 }
-
-
-        #services ul li {
-            color: #dab327;
-        }
-        button, input[type="submit"] {
-            background-color: #dab327;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
         
     </style>
 </head>
@@ -218,15 +209,17 @@ nav ul li a.active {
      <!-- Content Wrapper -->
     <div id="content-wrapper">
         <main>
-            <section id="hero">
-                <div class="container">
-                    <div class="hero-left">
-                    <h1>Professional House Clearance Services</h1>
-                    <p>Your trusted partner for efficient and hassle-free clearances.</p>
-                    <a href="#contact">GET IN TOUCH</a>
-                </div>
-                </div>
-            </section>
+           <section id="hero">
+    <div class="container">
+        <div class="hero-left">
+            <h1>Professional House Clearance Services</h1>
+            <p>Your trusted partner for efficient and hassle-free clearances.</p>
+        </div>
+        <div class="hero-right">
+            <a href="#contact">GET IN TOUCH</a>
+        </div>
+    </div>
+</section>
 
         <section id="services" class="container">
             <h2>Our Services</h2>
