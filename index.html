@@ -200,6 +200,39 @@ nav ul li a.active {
     background: rgba(0, 0, 0, 0.6); /* Darkens the image by adding a black overlay with opacity */
     z-index: 0; /* Ensure the overlay is behind the text */
 }
+
+        #services {
+    background-color: #f9f9f9; /* Light background to differentiate the section */
+    padding: 50px 20px; /* Add more vertical padding */
+    min-height: 400px; /* Ensure the section has sufficient height */
+}
+
+.services-content {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space between text and images */
+    align-items: center; /* Vertically align content */
+    gap: 20px; /* Add spacing between the text and images */
+}
+
+.services-text {
+    flex: 1; /* Take up 1 part (25% in a 1:3 ratio) */
+    max-width: 25%; /* Ensure it doesn't stretch too far */
+}
+
+.services-images {
+    flex: 3; /* Take up 3 parts (75% in a 1:3 ratio) */
+    display: flex; /* Flexbox for the images */
+    gap: 15px; /* Space between images */
+    justify-content: space-around; /* Space images evenly */
+}
+
+.services-images img {
+    max-width: 100%; /* Scale images to fit */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners to images */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+}
+
         
     </style>
 </head>
@@ -236,12 +269,21 @@ nav ul li a.active {
         <section id="services" class="container">
             <h2>Our Services</h2>
             <p>We provide comprehensive house clearance solutions, including:</p>
+            <div class="services-content">
+        <div class="services-text">
             <ul>
                 <li>Full house clearances</li>
                 <li>Garage and loft clearance</li>
                 <li>Garden waste removal</li>
                 <li>Commercial property clearances</li>
             </ul>
+            </div>
+        <div class="services-images">
+            <img src="image1.jpg" alt="Service 1">
+            <img src="image2.jpg" alt="Service 2">
+            <img src="image3.jpg" alt="Service 3">
+             </div>
+    </div>
         </section>
 
         <section id="about" class="container">
