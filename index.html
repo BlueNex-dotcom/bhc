@@ -201,36 +201,35 @@ nav ul li a.active {
     z-index: 0; /* Ensure the overlay is behind the text */
 }
 
-        #services {
-    background-color: #f9f9f9; /* Light background to differentiate the section */
-    padding: 50px 20px; /* Add more vertical padding */
-    min-height: 600px; /* Ensure the section has sufficient height */
-            display: flex; /* Ensure the content fills the height of the section */
-   gap: 20px; /* Add space between the text and images */
+  #services {
+    background-color: #f9f9f9; /* Light background to distinguish the section */
+    padding: 50px 20px; /* Add padding for spacing */
+    min-height: 400px; /* Increase section height slightly */
+    display: flex; /* Flexbox for layout */
+    gap: 20px; /* Add space between the text and images */
+    align-items: center; /* Center-align items vertically */
 }
 
 .services-content {
-    display: flex; /* Use Flexbox for layout */
-    justify-content: space-between; /* Space between text and images */
- align-items: flex-start; /* Align items at the top */
-     flex-wrap: wrap; /* Allow flexibility for smaller screens */
-   gap: 20px; /* Add spacing between the text and images */
-    height: 100%; /* Ensure the content fills the height of the section */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Distribute text and images */
+    align-items: center; /* Align items in the middle */
+    width: 100%;
+    gap: 20px; /* Space between text and images */
 }
 
 .services-text {
-    flex: 1; /* Take up 1 part (25% in a 1:3 ratio) */
-    max-width: 25%; /* Ensure it doesn't stretch too far */
-     align-self: flex-start; /* Align the text at the top */
+    flex: 1; /* Take 25% of the width */
+    max-width: 25%; /* Ensure the text does not stretch too far */
 }
 
-        .services-text h2 {
+.services-text h2 {
     margin-bottom: 20px; /* Space between heading and list */
     font-size: 1.8rem; /* Slightly larger for emphasis */
     color: #333; /* Stronger text color */
 }
 
-        .services-text ul {
+.services-text ul {
     list-style: none; /* Remove bullets */
     padding: 0;
     margin: 0;
@@ -243,17 +242,17 @@ nav ul li a.active {
 }
 
 .services-images {
-    flex: 3; /* Take up 3 parts (75% in a 1:3 ratio) */
-    display: grid; /* Flexbox for the images */
-    grid-template-rows: repeat(3, 1fr); /* Equal-height rows for images */
-    grid-gap: 15px; /* Gap between images */
-    height: 100%; /* Ensure images span full height of the section */
-  justify-content: space-evenly; /* Space the images evenly */
+    flex: 3; /* Take 75% of the width */
+    display: flex; /* Arrange images in a horizontal row */
+    justify-content: space-between; /* Add spacing between images */
+    gap: 15px; /* Optional spacing between images */
+    height: 100%; /* Images take up the height of the section */
 }
 
 .services-images img {
-    width: 100%; /* Images stretch to fill width */
-    height: 100%; /* Images fill the grid cell height */
+    flex: 1; /* All images have equal width */
+    max-width: 30%; /* Ensure images don’t exceed 30% of the total space */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Prevent distortion of images */
     border-radius: 8px; /* Add rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for emphasis */
