@@ -132,9 +132,9 @@ nav ul li a.active {
     color: #dab327; /* Changes text color for the active link */
 }
 
-       #hero {
+    #hero {
     background: url('https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/hero-background.jpg') no-repeat center center/cover;
-    height: 500px; /* Adjust height as needed */
+    height: 600px; /* Adjust height as needed */
     color: white;
     position: relative;
     display: flex; /* Use flexbox for alignment */
@@ -160,19 +160,30 @@ nav ul li a.active {
     margin: 0; /* Removes extra spacing between the text */
 }
 
+.hero-left p {
+    margin-top: 10px; /* Adds space between the heading and the paragraph */
+}
+
 .hero-right {
     display: flex;
     align-items: flex-start; /* Align button to the top */
 }
 
 .hero-right a {
-    background-color: #dab327;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    background-color: #dab327; /* Original yellow button background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adds padding to the button */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Makes the text bold */
+    position: relative;
+    z-index: 1; /* Ensures the button is above other content */
 }
+
+.hero-right a:hover {
+    background-color: #c9a71c; /* Darken the button when hovered */
+}
+
 
         #services ul li {
             color: #dab327;
