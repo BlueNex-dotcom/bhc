@@ -204,7 +204,7 @@ nav ul li a.active {
   #services {
     background-color: #f9f9f9; /* Light background to distinguish the section */
     padding: 50px 20px; /* Add padding for spacing */
-    min-height: 400px; /* Increase section height slightly */
+    min-height: 500px; /* Increase section height slightly */
     display: flex; /* Flexbox for layout */
     gap: 20px; /* Add space between the text and images */
     align-items: center; /* Center-align items vertically */
@@ -245,8 +245,8 @@ nav ul li a.active {
     flex: 3; /* Take 75% of the width */
     display: flex; /* Arrange images in a horizontal row */
     justify-content: space-between; /* Add spacing between images */
-    gap: 15px; /* Optional spacing between images */
-    height: 100%; /* Images take up the height of the section */
+    gap: 20px; /* Optional spacing between images */
+    height: calc(100% - 50px); /* Full section height minus padding */
 }
 
 .services-images img {
@@ -254,7 +254,7 @@ nav ul li a.active {
     max-width: 30%; /* Ensure images don’t exceed 30% of the total space */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Prevent distortion of images */
-    border-radius: 8px; /* Add rounded corners */
+    border-radius: 10px; /* Add rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for emphasis */
 }
 
