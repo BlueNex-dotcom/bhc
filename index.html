@@ -27,6 +27,9 @@ body {
     border-radius: 15px; /* Makes the corners rounded with a radius of 15px */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better appearance */
     background-color: white; /* Ensures contrast with the body background */
+    overflow: hidden; /* Ensures the rounded corners show properly */
+    position: relative; /* Needed for z-index to work */
+    z-index: 1; /* Brings the content wrapper above the header */
 }
 
 #content-wrapper section {
