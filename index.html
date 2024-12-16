@@ -132,41 +132,43 @@ nav ul li a.active {
     color: #dab327; /* Changes text color for the active link */
 }
 
-    #hero {
+#hero {
     background: url('https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/hero-background.jpg') no-repeat center center/cover;
-    height: 600px; /* Adjust height as needed */
+    padding: 100px 0; /* Adds padding to increase the size of the hero section */
+    text-align: left; /* Ensures text aligns to the left */
     color: white;
     position: relative;
-    display: flex; /* Use flexbox for alignment */
-    align-items: flex-start; /* Align items at the top of the section */
-    justify-content: space-between; /* Push content to the edges (left and right) */
-    padding: 20px; /* Adds some padding around the edges */
+    height: 500px; /* You can adjust this height to suit the image size */
 }
 
 #hero .container {
-    display: flex; /* Flexbox for aligning left and right sections */
-    justify-content: space-between; /* Space out text and button */
-    width: 100%;
-    padding: 0 20px; /* Optional: Add padding for spacing */
+    display: flex;
+    justify-content: space-between; /* Spacing out the text on the left and the button on the right */
+    align-items: flex-start; /* Align items to the top */
+    padding: 0 20px; /* Padding to add some spacing */
     box-sizing: border-box;
+    width: 100%;
 }
 
 .hero-left {
-    max-width: 50%; /* Limits width of text to avoid stretching */
+    max-width: 60%; /* Takes up most of the space */
 }
 
-.hero-left h1, 
-.hero-left p {
-    margin: 0; /* Removes extra spacing between the text */
+.hero-left h1 {
+    margin: 0; /* Ensures no extra margin around the heading */
+    font-size: 3rem; /* Adjusts font size */
 }
 
 .hero-left p {
-    margin-top: 10px; /* Adds space between the heading and the paragraph */
+    margin-top: 20px; /* Adds space between the heading and paragraph */
+    font-size: 1.5rem; /* Adjusts font size of the paragraph */
 }
 
 .hero-right {
     display: flex;
-    align-items: flex-start; /* Align button to the top */
+    align-items: flex-start; /* Aligns the button to the top right */
+    justify-content: flex-end; /* Pushes the button to the right */
+    width: 30%; /* Occupies 30% of the width */
 }
 
 .hero-right a {
