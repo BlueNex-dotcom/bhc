@@ -1,344 +1,103 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>House Clearance Services | Reliable & Affordable | Contact Us Today</title>
-    <meta name="description" content="We offer professional and reliable house clearance services tailored to your needs. Contact us to schedule your clearance today." />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/main.css" media="all" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600&display=swap" media="all" />
-
-    <style>
-        /* Inline essential styles */
-     /* Body with full background color */
-body {
-    background-color: #222222; /* Matches the header and footer */
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#content-wrapper {
-    max-width: 95%; /* Adjusts the width relative to the screen */
-    margin: 20px auto; /* Centers the content and adds vertical spacing */
-    padding: 0px; /* Adds inner spacing inside the wrapper */
-    border-radius: 15px; /* Makes the corners rounded with a radius of 15px */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better appearance */
-    background-color: white; /* Ensures contrast with the body background */
-    overflow: hidden; /* Ensures the rounded corners show properly */
-    position: relative; /* Needed for z-index to work */
-    z-index: 1; /* Brings the content wrapper above the header */
-}
-
-#content-wrapper section {
-    padding: 20px; /* Adds spacing within each section */
-}
-
-        
-/* Header and Footer adjustments for alignment */
-header, footer {
-    width: 100%;
-    box-sizing: border-box;
-}
-
-header .container {
-    width: 100%; /* Ensures the container spans the full width of the header */
-    display: flex; /* Enables flexbox inside the container */
-    justify-content: space-between; /* Places logo on the left and nav on the right */
-    align-items: center; /* Vertically centers the elements */
-    padding: 0 20px; /* Adds padding inside the container for spacing */
-    box-sizing: border-box; /* Ensures padding is included in width calculation */
-}
-
-            
-            header {
-            display: flex; /* Enables flexbox for the header */
-    justify-content: space-between; /* Ensures the logo and nav are on opposite sides */
-    align-items: center; /* Vertically aligns items within the header */
-    padding: 0; /* Removes extra padding in the header */
-            background-color: #222222;
-            padding: 15px 0;
-            color: white;
-            position: relative; /* Allows absolute positioning inside the header */
-        }
-        
-        header img {
-            max-width: 275px;
-            position: absolute; /* Allow logo to be positioned independently */
-            top: 50%; /* Vertically center logo */
-            left: 50px; /* Place logo 10px from the left edge (adjust as needed) */
-            transform: translateY(-50%); /* Fine-tunes vertical centering */
-            margin: 5;
-        }
-
-          nav {
-    margin-left: auto; /* Keep links on the right */
-    padding-right: 50px; /* Add 20px gap between the links and the right edge */
-}
-
-nav ul {
-    display: flex; /* Makes the navigation items horizontal */
-    justify-content: flex-end; /* Pushes all links to the right */
-    padding: 0; /* Removes default padding in the ul */
-    margin: 5; /* Removes any default margin */
-    list-style: none; /* Removes bullet points */
-    gap: 15px; /* Adds space between the links */
-    right: 25;
-}
-
-header .container {
-    display: flex; /* Enables flexbox for aligning items */
-    justify-content: space-between; /* Ensures the logo and nav are on opposite sides */
-    align-items: center; /* Vertically centers the logo and nav */
-    padding: 0; /* Removes padding around the container */
-    margin: 5; /* Removes any extra margin */
-}
-
-        nav ul li {
-         list-style: none;
-        }
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    position: relative; /* Needed to position the ::after pseudo-element */
-}
-
-nav ul li a::after {
-    content: "";
-    display: block;
-    width: 120%; /* Slightly longer than the word */
-    height: 2px; /* Thickness of the underline */
-    background-color: #dab327; /* Underline color */
-    position: absolute;
-    bottom: -6px; /* Distance from the text */
-    left: -10%; /* Centers the underline relative to the text */
-    transform: scaleX(0); /* Hides the underline initially */
-    transition: transform 0.3s ease; /* Smooth transition for reveal */
-    transform-origin: left; /* Animation starts from the left */
-}
-
-nav ul li a:hover::after {
-    transform: scaleX(1); /* Reveals the underline on hover */
-}
-
-nav ul li a.active::after {
-    transform: scaleX(1); /* Keeps the underline visible for the active link */
-}
-
-nav ul li a.active {
-    color: #dab327; /* Changes text color for the active link */
-}
-
-#hero {
-    background: url('https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/hero-background.jpg') no-repeat center center/cover;
-    padding: 100px 0; /* Adds padding to increase the size of the hero section */
-    text-align: left; /* Ensures text aligns to the left */
-    color: white;
-    position: relative;
-    height: 500px; /* You can adjust this height to suit the image size */
-}
-
-#hero .container {
-    display: flex;
-    justify-content: space-between; /* Spacing out the text on the left and the button on the right */
-    align-items: flex-start; /* Align items to the top */
-    padding: 0 20px; /* Padding to add some spacing */
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-    z-index: 1; /* Makes sure the text is on top of the dark overlay */
-    color: white;
-}
-
-.hero-left {
-    max-width: 60%; /* Takes up most of the space */
-}
-
-.hero-left h1 {
-    margin: 0; /* Ensures no extra margin around the heading */
-    font-size: 2rem; /* Adjusts font size */
-}
-
-.hero-left p {
-    margin-top: 20px; /* Adds space between the heading and paragraph */
-    font-size: 1.5rem; /* Adjusts font size of the paragraph */
-}
-
-.hero-right {
-    display: flex;
-    align-items: flex-start; /* Aligns the button to the top right */
-    justify-content: flex-end; /* Pushes the button to the right */
-    width: 30%; /* Occupies 30% of the width */
-}
-
-.hero-right a {
-    background-color: #dab327; /* Original yellow button background */
-    color: white; /* Text color */
-    padding: 12px 30px; /* Increased padding to make it more oval */
-    text-decoration: none; /* Removes underline */
-    border-radius: 25px; /* Large border-radius to make the button more oval */
-    font-weight: bold; /* Makes the text bold */
-    position: relative;
-    z-index: 1; /* Ensures the button is above other content */
-}
-
-.hero-right a:hover {
-    background-color: #c9a71c; /* Darken the button when hovered */
-}
-
-        /* Darken the background image */
-#hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Darkens the image by adding a black overlay with opacity */
-    z-index: 0; /* Ensure the overlay is behind the text */
-}
-
-  #services {
-    background-color: #f9f9f9; /* Light background to distinguish the section */
-    padding: 50px 20px; /* Add padding for spacing */
-    min-height: 400px; /* Increase section height slightly */
-    display: flex; /* Flexbox for layout */
-    gap: 20px; /* Add space between the text and images */
-    align-items: center; /* Center-align items vertically */
-}
-
-.services-content {
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Distribute text and images */
-    align-items: center; /* Align items in the middle */
-    width: 100%;
-    gap: 20px; /* Space between text and images */
-}
-
-.services-text {
-    flex: 1; /* Take 25% of the width */
-    max-width: 25%; /* Ensure the text does not stretch too far */
-     color: #dab327;
-}
-
-.services-text h2 {
-    margin-bottom: 0px; /* Space between heading and list */
-     text-align: left; /* Align text to the left */
-    font-size: 2.5rem; /* Slightly larger for emphasis */
-      position: relative;
-    top: 0; /* Ensure it's positioned at the top */
-    color: #333; /* Stronger text color */
-}
-
-.services-text ul {
-    list-style: none; /* Remove bullets */
-    padding: 0;
-    margin: 0;
-}
-
-.services-text ul li {
-    margin-bottom: 10px; /* Add spacing between list items */
-    font-size: 1rem; /* Text size for list */
-    color: #555; /* Subdued color for balance */
-}
-
-.services-images {
-    flex: 3; /* Take 75% of the width */
-    display: flex; /* Arrange images in a horizontal row */
-    justify-content: space-between; /* Add spacing between images */
-    gap: 20px; /* Optional spacing between images */
-    height: calc(100% - 50px); /* Full section height minus padding */
-}
-
-.services-images img {
-    flex: 1; /* All images have equal width */
-    max-width: 30%; /* Ensure images don’t exceed 30% of the total space */
-    height: 400px;
-    object-fit: cover; /* Prevent distortion of images */
-    border-radius: 10px; /* Add rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for emphasis */
-}
-
-    </style>
+	<title>House Clearances | Professional & Reliable Services</title>
+	<meta name="description" content="We provide reliable and professional house clearance services tailored to your needs. Contact us today for a free, no-obligation quote." />
+	<link rel="canonical" href="https://www.examplehouseclearances.co.uk/" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="House Clearances | Professional & Reliable Services" />
+	<meta property="og:description" content="We provide reliable and professional house clearance services tailored to your needs. Contact us today for a free, no-obligation quote." />
+	<meta property="og:url" content="https://www.examplehouseclearances.co.uk/" />
+	<meta property="og:site_name" content="House Clearances Ltd" />
+	<meta property="og:image" content="https://www.examplehouseclearances.co.uk/images/clearance.jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	
+	<link rel='stylesheet' href='https://www.examplehouseclearances.co.uk/css/theme.min.css' />
+	<link rel='stylesheet' href='https://www.examplehouseclearances.co.uk/css/style.css' />
+	<link rel='stylesheet' href='https://www.examplehouseclearances.co.uk/css/animations.css' />
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <img src="https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/bhc-logo.png" alt="House Clearance Logo" />
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#services">Our Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body class="home page-template-default page">
+	<header>
+		<div class="header-container">
+			<a href="https://www.examplehouseclearances.co.uk" class="logo">
+				<img src="https://www.examplehouseclearances.co.uk/images/logo.png" alt="House Clearances Logo">
+			</a>
+			<nav class="site-navigation">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/about">About Us</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-     <!-- Content Wrapper -->
-    <div id="content-wrapper">
-        <main>
-           <section id="hero">
-    <div class="container">
-        <div class="hero-left">
-            <h1>Professional House Clearance Services</h1>
-            <p>Your trusted partner for efficient and hassle-free clearances.</p>
-        </div>
-        <div class="hero-right">
-            <a href="#contact">GET IN TOUCH</a>
-        </div>
-    </div>
-</section>
+	<section class="hero-section" style="background: url('https://www.examplehouseclearances.co.uk/images/hero-bg.jpg') center center/cover no-repeat;">
+		<div class="hero-content">
+			<h1>Professional House Clearance Services</h1>
+			<p>Fast, reliable, and eco-friendly house clearances tailored to your needs.</p>
+			<a href="/contact" class="btn">Get a Free Quote</a>
+		</div>
+	</section>
 
-        <section id="services" class="container">
-            <h2>Our Services</h2>
-            <div class="services-content">
-        <div class="services-text">
-            <ul>
-                <li>Full house clearances</li>
-                <li>Garage and loft clearance</li>
-                <li>Garden waste removal</li>
-                <li>Commercial property clearances</li>
-            </ul>
-            </div>
-        <div class="services-images">
-            <img src="https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/1678815258_136846.jpeg" alt="Service 1">
-            <img src="https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/photo-1616046229478-9901c5536a45.jpeg" alt="Service 2">
-            <img src="https://raw.githubusercontent.com/BlueNex-dotcom/bhc/refs/heads/main/House-interior-design-of-a-chic-living-room.jpeg" alt="Service 3">
-             </div>
-    </div>
-        </section>
+	<section class="services-section">
+		<div class="container">
+			<h2>Our Services</h2>
+			<div class="service-items">
+				<div class="service-item">
+					<h3>Full House Clearances</h3>
+					<p>Complete property clearances for homes, flats, and estates.</p>
+				</div>
+				<div class="service-item">
+					<h3>Garden & Garage Clearances</h3>
+					<p>Efficient clearance of outdoor spaces, garages, and sheds.</p>
+				</div>
+				<div class="service-item">
+					<h3>Office Clearances</h3>
+					<p>Professional office and commercial property clearances.</p>
+				</div>
+				<div class="service-item">
+					<h3>Recycling & Donations</h3>
+					<p>Environmentally friendly recycling and donations to reduce waste.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-        <section id="about" class="container">
-            <h2>About Us</h2>
-            <p>With over 10 years of experience, we ensure top-notch services with a focus on customer satisfaction and environmental responsibility. Contact us for personalized solutions tailored to your needs.</p>
-        </section>
+	<section class="about-section">
+		<div class="container">
+			<h2>About Us</h2>
+			<p>With over 10 years of experience, House Clearances Ltd provides professional, eco-friendly clearance services. We work quickly and efficiently to clear properties of all sizes.</p>
+			<a href="/about" class="btn">Learn More</a>
+		</div>
+	</section>
 
-        <section id="contact" class="container">
-            <h2>Contact Us</h2>
-            <form action="submit-form.php" method="POST">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+	<section class="contact-section">
+		<div class="container">
+			<h2>Get in Touch</h2>
+			<p>Contact us today to discuss your house clearance needs and receive a free, no-obligation quote.</p>
+			<a href="/contact" class="btn">Contact Us</a>
+		</div>
+	</section>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+	<footer>
+		<div class="footer-container">
+			<div class="footer-content">
+				<p>&copy; 2024 House Clearances Ltd. All Rights Reserved.</p>
+				<p>Phone: <a href="tel:0123456789">01234 567 890</a> | Email: <a href="mailto:info@examplehouseclearances.co.uk">info@examplehouseclearances.co.uk</a></p>
+			</div>
+		</div>
+	</footer>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 House Clearance Services. All rights reserved.</p>
-        </div>
-    </footer>
+	<script src="https://www.examplehouseclearances.co.uk/js/animations.js"></script>
 </body>
 </html>
