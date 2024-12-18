@@ -213,7 +213,8 @@ nav ul li a.active {
 .services-content {
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Distribute text and images */
-    align-items: center; /* Align items in the middle */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    align-items: flex-start; /* Align items to the top */
     width: 100%;
     gap: 20px; /* Space between text and images */
 }
