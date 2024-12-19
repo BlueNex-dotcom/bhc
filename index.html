@@ -267,6 +267,42 @@ nav ul li a.active {
     height: calc(100% - 50px); /* Full section height minus padding */
 }
 
+        .image-link {
+    flex: 1; /* Ensures all links take equal space */
+    text-decoration: none; /* Removes underline from links */
+    position: relative; /* For positioning text overlay */
+}
+
+.image-container {
+    position: relative; /* To position text within the container */
+    overflow: hidden; /* Ensures content doesn't overflow */
+    border-radius: 10px; /* Rounds image corners */
+}
+
+.image-container img {
+    width: 100%; /* Ensure the image takes full width of container */
+    height: 400px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures image does not stretch */
+    display: block;
+    border-radius: 10px; /* Match border radius */
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+.image-container:hover img {
+    transform: scale(1.05); /* Zoom in slightly on hover */
+}
+
+.image-text {
+    position: absolute; /* Position text within the container */
+    bottom: 10px; /* Position near bottom */
+    left: 15px; /* Position near left edge */
+    color: white; /* White text for contrast */
+    font-size: 1.2rem; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add subtle shadow for readability */
+    z-index: 2; /* Ensures text is above image */
+}
+        
 .services-images img {
     flex: 1; /* All images have equal width */
     max-width: 30%; /* Ensure images don’t exceed 30% of the total space */
