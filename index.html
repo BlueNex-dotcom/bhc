@@ -439,30 +439,18 @@ nav ul li a.active {
     margin: 0 auto; /* Center-align text block */
 }
 
-   #contact {
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover; /* Replace with your image URL */
+  #contact {
+    background-color: #1f1f1f; /* Set background to dark gray */
     padding: 80px 20px;
     color: white;
     text-align: center;
     position: relative;
 }
 
-#contact::before {
-    content: ""; /* Semi-transparent overlay */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: 1;
-}
-
 #contact h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     position: relative;
-    z-index: 2;
 }
 
 .contact-content {
@@ -470,8 +458,6 @@ nav ul li a.active {
     justify-content: space-between; /* Space between the two halves */
     align-items: flex-start; /* Align content to the top */
     gap: 20px;
-    position: relative;
-    z-index: 2; /* Ensure content is above overlay */
 }
 
 .contact-form, .contact-info {
@@ -480,13 +466,14 @@ nav ul li a.active {
 }
 
 .contact-form form {
-    text-align: left; /* Align form elements to the left */
+    text-align: center; /* Center-align all form elements */
 }
 
 .contact-form label {
-    display: block;
+    display: block; /* Ensure labels appear above inputs */
     margin-bottom: 10px;
     font-size: 1.2rem;
+    text-align: center; /* Center-align the labels */
 }
 
 .contact-form input,
@@ -515,7 +502,7 @@ nav ul li a.active {
 }
 
 .contact-info {
-    text-align: left; /* Align text to the left */
+    text-align: left;
     font-size: 1.2rem;
     line-height: 1.8;
 }
@@ -523,6 +510,7 @@ nav ul li a.active {
 .contact-info p {
     margin-bottom: 15px;
 }
+
 
     </style>
 </head>
