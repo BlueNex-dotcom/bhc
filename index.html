@@ -439,57 +439,68 @@ nav ul li a.active {
     margin: 0 auto; /* Center-align text block */
 }
 
-        #contact {
-    background: white;
-    padding: 80px 20px; /* Add padding for spacing */
-    color: white; /* Ensure text is readable on the background */
-    text-align: center; /* Center-align text */
-    position: relative; /* Position for overlay adjustments */
+   #contact {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover; /* Replace with your image URL */
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
 }
 
 #contact::before {
-    content: ""; /* Add a semi-transparent overlay */
+    content: ""; /* Semi-transparent overlay */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: 1; /* Place it below the text and form */
+    z-index: 1;
 }
 
 #contact h2 {
-    font-size: 2.5rem; /* Adjust heading size */
-    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-content {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between the two halves */
+    align-items: flex-start; /* Align content to the top */
+    gap: 20px;
+    position: relative;
     z-index: 2; /* Ensure content is above overlay */
-    position: relative; /* Ensure z-index works */
 }
 
-#contact form {
-    max-width: 600px; /* Limit form width */
-    margin: 0 auto; /* Center-align the form */
-    z-index: 2; /* Ensure form is above overlay */
-    position: relative; /* Ensure z-index works */
+.contact-form, .contact-info {
+    flex: 1; /* Each takes up half the width */
+    max-width: 48%; /* Prevent them from exceeding their half */
 }
 
-#contact label {
+.contact-form form {
+    text-align: left; /* Align form elements to the left */
+}
+
+.contact-form label {
     display: block;
-    font-size: 1.2rem; /* Larger font for labels */
     margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
-#contact input, 
-#contact textarea {
-    width: 100%; /* Full-width inputs */
-    padding: 10px; /* Add padding inside inputs */
-    margin-bottom: 20px; /* Space between inputs */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
     font-size: 1rem;
 }
 
-#contact button {
-    background-color: #dab327; /* Button color */
+.contact-form button {
+    background-color: #dab327;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -499,10 +510,19 @@ nav ul li a.active {
     transition: background-color 0.3s ease;
 }
 
-#contact button:hover {
-    background-color: #c9a71c; /* Darken button on hover */
+.contact-form button:hover {
+    background-color: #c9a71c;
 }
 
+.contact-info {
+    text-align: left; /* Align text to the left */
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
 
     </style>
 </head>
@@ -606,7 +626,7 @@ nav ul li a.active {
     </div>
 </section>
             
-        <section id="contact" class="container">
+     <section id="contact" class="container">
     <h2>Contact Us</h2>
     <div class="contact-content">
         <!-- Left Side: Contact Form -->
@@ -633,6 +653,7 @@ nav ul li a.active {
         </div>
     </div>
 </section>
+
 
     </main>
 
