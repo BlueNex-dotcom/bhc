@@ -607,7 +607,10 @@ nav ul li a.active {
 </section>
             
         <section id="contact" class="container">
-            <h2>Contact Us</h2>
+    <h2>Contact Us</h2>
+    <div class="contact-content">
+        <!-- Left Side: Contact Form -->
+        <div class="contact-form">
             <form action="submit-form.php" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -620,7 +623,17 @@ nav ul li a.active {
 
                 <button type="submit">Send Message</button>
             </form>
-        </section>
+        </div>
+
+        <!-- Right Side: Contact Information -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> contact@yourcompany.com</p>
+            <p><strong>Phone:</strong> +1 234 567 890</p>
+            <p><strong>Address:</strong> 123 Your Street, Your City, YC 12345</p>
+        </div>
+    </div>
+</section>
+
     </main>
 
     <footer>
